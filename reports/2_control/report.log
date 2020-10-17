@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.10.11)  12 OCT 2020 02:27
+This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.10.11)  17 OCT 2020 01:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -266,120 +266,177 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-)) (./assets/info.sty)
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 14.
+)) (./assets/info.sty) (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count290
+\lst@gtempboxa=\box81
+\lst@token=\toks25
+\lst@length=\count291
+\lst@currlwidth=\dimen191
+\lst@column=\count292
+\lst@pos=\count293
+\lst@lostspace=\dimen192
+\lst@width=\dimen193
+\lst@newlines=\count294
+\lst@lineno=\count295
+\lst@maxwidth=\dimen194
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count296
+\lst@skipnumbers=\count297
+\lst@framebox=\box82
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/listing/jlisting.sty
+Package: jlisting 2006/02/20 0.2 (Thor)
+\lst@nextchar=\count298
+\lst@inputfile=\read2
+)
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 15.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
-Package chemgreek Info: Activating mapping `default' on line 14.
+Package chemgreek Info: Activating mapping `default' on line 15.
 
  (/usr/local/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 14.
+\c@lstlisting=\count299
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 15.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 14.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 15.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 14.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 15.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 14.
+(Font)              <10> on input line 15.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 14.
+(Font)              <7> on input line 15.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 14.
+(Font)              <5> on input line 15.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 14.
+(Font)              scaled to size 6.47278pt on input line 15.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 14.
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 14.
+(Font)              scaled to size 4.62341pt on input line 15.
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 15.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 14.
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 15.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 15.
+(Font)              scaled to size 15.9785pt on input line 16.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 15.
+(Font)              scaled to size 15.9785pt on input line 16.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 15.
+(Font)              scaled to size 11.09619pt on input line 16.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 15.
+(Font)              scaled to size 11.09619pt on input line 16.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 15.
+(Font)              <12> on input line 16.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 15.
+(Font)              <8> on input line 16.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 15.
+(Font)              <6> on input line 16.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 15.
+(Font)              scaled to size 5.5481pt on input line 16.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 15.
+(Font)              scaled to size 8.32214pt on input line 16.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 15.
+(Font)              scaled to size 8.32214pt on input line 16.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 15.
+(Font)              <9> on input line 16.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 15.
+(Font)              scaled to size 5.5481pt on input line 16.
  [1
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 20.
+(Font)              scaled to size 13.31541pt on input line 21.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 20.
+(Font)              scaled to size 13.31541pt on input line 21.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 22.
+(Font)              scaled to size 19.17792pt on input line 23.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 22.
+(Font)              scaled to size 19.17792pt on input line 23.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 22.
+(Font)              scaled to size 19.17792pt on input line 23.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 22.
+(Font)              scaled to size 19.17792pt on input line 23.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 22.
+(Font)              scaled to size 13.31541pt on input line 23.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 22.
- [1] [1] [1] (./report.bbl) [2] (./report.aux) ) 
-Here is how much of TeX's memory you used:
- 5403 strings out of 480382
- 119172 string characters out of 5894950
- 399722 words of memory out of 5000000
- 22118 multiletter control sequences out of 15000+600000
- 602256 words of font info for 111 fonts, out of 8000000 for 9000
- 934 hyphenation exceptions out of 8191
- 83i,11n,88p,381b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
+(Font)              scaled to size 13.31541pt on input line 23.
+ [1] [2]
+File: dc_eq.pdf Graphic file (type pdf)
+<dc_eq.pdf>
+File: pv.pdf Graphic file (type pdf)
+<pv.pdf>
 
-Output written on report.dvi (5 pages, 2688 bytes).
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: p.pdf Graphic file (type pdf)
+<p.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3] [4]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 182.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+File: fig1.pdf Graphic file (type pdf)
+<fig1.pdf>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: fig2.pdf Graphic file (type pdf)
+<fig2.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5] [6] [1] [2] [1] (./report.bbl) [2] (./report.aux) ) 
+Here is how much of TeX's memory you used:
+ 6853 strings out of 480382
+ 140345 string characters out of 5894950
+ 426684 words of memory out of 5000000
+ 23536 multiletter control sequences out of 15000+600000
+ 602621 words of font info for 112 fonts, out of 8000000 for 9000
+ 934 hyphenation exceptions out of 8191
+ 83i,11n,88p,381b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on report.dvi (11 pages, 10880 bytes).

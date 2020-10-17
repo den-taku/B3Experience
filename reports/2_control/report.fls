@@ -264,6 +264,32 @@ INPUT ./assets/info.sty
 INPUT assets/info.sty
 INPUT ./assets/info.sty
 INPUT assets/info.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listing/jlisting.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listing/jlisting.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listing/jlisting.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listing/jlisting.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listing/jlisting.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listing/jlisting.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listing/jlisting.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listing/jlisting.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/listing/jlisting.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -365,6 +391,31 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/rm-lmss17.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/rm-lmss12.tfm
+INPUT ./dc_eq.pdf
+INPUT ./dc_eq.pdf
+INPUT dc_eq.pdf
+INPUT extractbb -B cropbox -O dc_eq.pdf
+INPUT ./pv.pdf
+INPUT ./pv.pdf
+INPUT pv.pdf
+INPUT extractbb -B cropbox -O pv.pdf
+INPUT ./p.pdf
+INPUT ./p.pdf
+INPUT p.pdf
+INPUT extractbb -B cropbox -O p.pdf
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
+INPUT ./fig1.pdf
+INPUT ./fig1.pdf
+INPUT fig1.pdf
+INPUT extractbb -B cropbox -O fig1.pdf
+INPUT ./fig2.pdf
+INPUT ./fig2.pdf
+INPUT fig2.pdf
+INPUT extractbb -B cropbox -O fig2.pdf
 INPUT ./report.bbl
 INPUT report.bbl
 INPUT ./report.bbl
