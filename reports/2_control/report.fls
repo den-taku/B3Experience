@@ -416,8 +416,7 @@ INPUT ./fig2.pdf
 INPUT ./fig2.pdf
 INPUT fig2.pdf
 INPUT extractbb -B cropbox -O fig2.pdf
-INPUT ./report.bbl
-INPUT report.bbl
-INPUT ./report.bbl
-INPUT report.bbl
-INPUT report.aux
+INPUT ./bode.pdf
+INPUT ./bode.pdf
+INPUT bode.pdf
+INPUT extractbb -B cropbox -O bode.pdf

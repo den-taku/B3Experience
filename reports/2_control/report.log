@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.10.11)  18 OCT 2020 13:14
+This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.10.11)  18 OCT 2020 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -359,81 +359,4 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 15.9785pt on input line 16.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 16.
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 16.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 16.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 16.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 16.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 16.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 16.
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 16.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 16.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 16.
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 16.
- [1
-
-]
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 21.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 21.
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 23.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 23.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 23.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 23.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 23.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 23.
- [1] [2]
-File: dc_eq.pdf Graphic file (type pdf)
-<dc_eq.pdf>
-File: pv.pdf Graphic file (type pdf)
-<pv.pdf>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: p.pdf Graphic file (type pdf)
-<p.pdf>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3] [4]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 182.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [5]
-File: fig1.pdf Graphic file (type pdf)
-<fig1.pdf>
-File: fig2.pdf Graphic file (type pdf)
-<fig2.pdf>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6] [7] [8] [9] (./report.bbl) [10] (./report.aux) ) 
-Here is how much of TeX's memory you used:
- 6853 strings out of 480382
- 140345 string characters out of 5894950
- 426684 words of memory out of 5000000
- 23536 multiletter control sequences out of 15000+600000
- 602621 words of font info for 112 fonts, out of 8000000 for 9000
- 934 hyphenation exceptions out of 8191
- 83i,11n,88p,381b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on report.dvi (11 pages, 12560 bytes).
+(Font)              scaled to size 15.9785pt on inpu

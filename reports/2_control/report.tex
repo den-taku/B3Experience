@@ -236,8 +236,55 @@ $C(s)$への入力信号、$Y_{\rm d}(s)$とみなせる。
 
 \section{実験結果}
 
+位置制御によって得られたデータは、式\ref{twentythree}、
+\ref{twentyfour}を元に得られる関係式
+
+\begin{equation}\label{twentyfive}
+    P(s)=\frac{k_{\rm P}}{sk'_{\rm E}}P_{\rm V}(s)
+\end{equation}
+
+から得られる変換式
+
+\begin{equation}\label{twentyfive'}
+    |G_{\rm V}| = \frac{\omega k'_{\rm E}}{k_{\rm P}}|G|
+\end{equation}
+
+\begin{equation}\label{twentyfive''}
+    {\rm arg}G_{\rm V} = {\rm arg}G + 90
+\end{equation}
+
+を用いて位相制御の計測値を速度制御のものと同様に扱えるように変換し、
+ボード線図を描いたものを図\ref{bode}に示す。
+
+% \begin{table}\label{table_pv}
+%     \begin{tabular}{|l|r|r|r|r|}\hline
+%         周波数[${\rm Hx}$] & 入力振幅[{\rm V}] & 出力振幅[{\rm V}]
+%         & ゲイン & 位相差[度] \\ \hline
+%     \end{tabular}
+% \end{table}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=10cm]{bode.pdf}
+    \caption{制御対象のボード線図}
+    \label{bode}
+\end{figure}
+
+\newpage
 
 \section{考察}
+
+まず、1回転ポテンショメータに対する$k_{\rm p}$の値を考える。
+ポテンショメータの両端子にはそれぞれ-15Vと15Vの電源を接続した。
+1回転ポテンショメータは1回転する間に-15Vから15Vへ変化するので、
+式\ref{eighteen}を参考に考えると$k_{\rm p}$の値は30/2$\pi$に
+なると考えた。
+
+
+% k'e
+% K,Te,Tm
+% ideal bode
+
 \section{課題}
 
 % 実験レポート1
