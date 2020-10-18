@@ -420,3 +420,8 @@ INPUT ./bode.pdf
 INPUT ./bode.pdf
 INPUT bode.pdf
 INPUT extractbb -B cropbox -O bode.pdf
+INPUT ./report.bbl
+INPUT report.bbl
+INPUT ./report.bbl
+INPUT report.bbl
+INPUT report.aux

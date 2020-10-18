@@ -246,11 +246,11 @@ $C(s)$への入力信号、$Y_{\rm d}(s)$とみなせる。
 から得られる変換式
 
 \begin{equation}\label{twentyfive'}
-    |G_{\rm V}| = \frac{\omega k'_{\rm E}}{k_{\rm P}}|G|
+    |P_{\rm V}| = \frac{\omega k'_{\rm E}}{k_{\rm P}}|P|
 \end{equation}
 
 \begin{equation}\label{twentyfive''}
-    {\rm arg}G_{\rm V} = {\rm arg}G + 90
+    {\rm arg}P_{\rm V} = {\rm arg}P + 90
 \end{equation}
 
 を用いて位相制御の計測値を速度制御のものと同様に扱えるように変換し、
@@ -280,8 +280,21 @@ $C(s)$への入力信号、$Y_{\rm d}(s)$とみなせる。
 式\ref{eighteen}を参考に考えると$k_{\rm p}$の値は30/2$\pi$に
 なると考えた。
 
+\newpage
 
-% k'e
+次に逆起電力定数$k'_{\rm E}$の算出法について考える。
+
+1回転ポテンショメータをDCサーボモータに取り付けた状態で、
+DCサーボモータ・ドライバに一定の直流電圧を与えて
+DCサーボモータを定速回転させ、
+この状態でのタコジェネレータ及びポテンショメータの出力電圧波形を
+観測することによっても測定できる。
+その原理は、式\ref{twentythree}、\ref{twentyfour}を参照して
+考えると、与えられた状況下では$P(s)$と$P_{\rm V}(s)$の差異が生じるのは
+それぞれの定数$k_{\rm A}$、$k'_{\rm E}$によってだけである。
+したがってそれぞれの出力電圧波形の比をとると$k_{\rm A}$/$k'_{\rm E}$
+が求まるので、そこに$k_{\rm A}$を代入すれば$k'_{\rm E}$が求まる。
+
 % K,Te,Tm
 % ideal bode
 
