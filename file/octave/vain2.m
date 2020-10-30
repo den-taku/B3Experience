@@ -2,11 +2,11 @@ pkg load control;
 
 clear;
 
-G=tf([1.755e-3 1.3695 15], [1.17e-4 9.13e-2 16.45]);
-stepsize=0.5;
+G=tf([15.45], [1.17e-4 9.13e-2 16.45]);
+stepsize=1.0;
 
 [y_unit t]=step(G,1);
-y=y_unit*stepsize;
+y=(y_unit*stepsize)-0.5;
 u=ones(length(t),1)*stepsize;
 
 figure
