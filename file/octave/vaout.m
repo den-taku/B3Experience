@@ -8,8 +8,7 @@ K=1.03;
 TE=1.3267e-3;
 TM=0.0909;
 
-
-G=tf([1.755e-3 1.3695 15], [1.17e-4 9.13e-2 16.45]);
+G=tf([R2*TE*TM R1*(TE+TM) R1], [R1*TE*TM R1*(TE+TM) R1+K*R2]);
 stepsize=0.5;
 
 [y_unit t]=step(G,1);
