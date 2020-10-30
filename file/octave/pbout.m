@@ -23,8 +23,7 @@ G=C/(1+C*P);
 %G=tf([TE*TM*C1*R2*R3*R4 R2*R4*(TE*TM+(TE+TM)*C1*R3) R2*R4*(TE+TM+C1*R3) R2*R4 0], [TE*TM*C2*R1*R3*R4 R1*R3*(TE*TM+(TE+TM)*C2*R4) R1*R3*(TE+TM+C2*R4) R3*(R1+K*C1*R2*R4) K*R2*R4]);
 stepsize=5.5;
 
-t=0:0.00001:0.5;
-[y_unit t]=step(G,t);
+[y_unit t]=step(G,0.5);
 y=y_unit*stepsize;
 u=ones(length(t),1)*stepsize;
 
