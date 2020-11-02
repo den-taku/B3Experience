@@ -491,38 +491,174 @@ $C_1=10{\rm \mu F}$、$C_2=1{\rm \mu F}$を用いた。
 \section{結果}
 
 上で求めた理論値を用いて描いた理論グラフと測定によって得られた値を
-プロットしたものをそれぞれ図\ref{ideal_plot3}、\ref{ideal_plot4}、
-\ref{ideal_plot}、\ref{ideal_plot2}に示す。
+プロットしたものをそれぞれ図\ref{idealplot3}、\ref{idealplot4}、
+\ref{idealplot}、\ref{idealplot2}に示す。
+
+ここで用いた測定値は、与えられたものである。
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=12cm]{ideal_plot3.pdf}
+    \includegraphics[width=9cm]{ideal_plot3.pdf}
     \caption{ゲイン(a)の測定値と理論値}
-    \label{ideal_plot3}
+    \label{idealplot3}
 \end{figure}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=12cm]{ideal_plot4.pdf}
+    \includegraphics[width=9cm]{ideal_plot4.pdf}
     \caption{位相差(a)の測定値と理論値}
-    \label{ideal_plot4}
+    \label{idealplot4}
 \end{figure}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=12cm]{ideal_plot.pdf}
+    \includegraphics[width=9cm]{ideal_plot.pdf}
     \caption{ゲイン(b)の測定値と理論値}
-    \label{ideal_plot}
+    \label{idealplot}
 \end{figure}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=12cm]{ideal_plot2.pdf}
+    \includegraphics[width=9cm]{ideal_plot2.pdf}
     \caption{位相差(b)の測定値と理論値}
-    \label{ideal_plot2}
+    \label{idealplot2}
 \end{figure}
 
+
+\newpage
+\ 
+\newpage
+\ 
+\newpage
 \section{考察}
+
+今回の測定値はオシロスコープから出力されたcsvファイルとして与えられた。
+それを処理するためにRustで書いたプログラムを用いた。
+そのコードをソースコード1に示す。
+
+このコードでは、ふた通りの方法でゲインを求めたのち、
+正弦波が0を示した点および0付近を示した点を列挙して、
+実際のグラフと対比させながら位相差を求めた。
+ゲインについて、まず全データの最大値、最小値を入力、出力それぞれについて
+求め、比を求めた。しかし、この方法は最大値を示す一点のみから求めるので
+ノイズに弱いと考えた。
+二つ目の方法として、全データを絶対値をとって足し込んだのち、
+測定間隔をかけ積分値とみなし、全データの観測時間をファイルの最初の
+行と最後の行から求め振幅を計算してゲインを求めた。
+
+この方法では低周波での観測において、位相差が0付近のデータを示すデータの数が
+少ないと正しくデータが取れない可能性があるため目視で求めた測定データを
+図\ref{mokushi1}、\ref{mokushi2}、\ref{mokushi3}、\ref{mokushi4}
+に示すが、今回の計測ではむしろ位相差の高周波領域において上手く観測できていなかった
+ことがわかった。これは、プログラムによる処理を高周波領域から始めたこと、
+および観測するにつれて実際のデータに合わせてプログラムのパラメータを
+調整したことによって生じた観測誤差だと考えた。
+
+これらのグラフより、算出した各パラメータの値は正しいと結論づけた。
+
+\begin{lstlisting}[caption={csv\_manager.rs}]
+    use competitive::prelude::*;
+
+#[argio(output = AtCoder)]
+// csvファイルを読み取る
+fn main(input: [(f32, f32, f32); 600]) {
+    // 微小時間の幅を求める
+    let dx = input[23].0.clone() - input[22].0.clone(); 
+    // 配列の用意
+    let mut v = Vec::new(); 
+    let mut w = Vec::new();
+    for i in 0..600 {
+        // ch1, ch2のデータを一旦こちらにコピー
+        v.push(input[i].1.clone()); 
+        w.push(input[i].2.clone());
+    }
+    // 振幅の最大値を求める
+    let max_ch1 = v.clone().into_iter().fold(0.0, f32::max); 
+    let max_ch2 = w.clone().into_iter().fold(0.0, f32::max);
+    println!("ch1'x max = {}", max_ch1);
+    println!("ch2'x max = {}", max_ch2);
+
+    // 全ての値を足しこむ変数を用意
+    let mut sum1 = 0.0; 
+    let mut sum2 = 0.0;
+    for i in 0..600 {
+        // 全て絶対値をとって足しこむ
+        sum1 += v[i].clone().abs(); 
+        sum2 += w[i].clone().abs();
+    }
+    //振幅を計算 
+    let amp1 = dx * sum1 * 3.14 / 2.0 
+        / (input[599].0.clone() - input[0].0.clone()); 
+    let amp2 = dx * sum2 * 3.14 / 2.0 
+        / (input[599].0.clone() - input[0].0.clone());
+    println!("ch1::sum1: {}", amp1);
+    println!("ch2::sum2: {}", amp2);
+
+    // ゲインを出力
+    println!("rate = {}", max_ch2 / max_ch1); 
+    println!("rate2 = {}", sum2 / sum1);
+
+    println!("");
+    println!("");
+
+    // こっから下で-3e-2~3e-2の間に入る点をピックアップ
+    // 特に丁度0になった点はメッセージを短くして目立つようにした
+    for i in 0..600 {
+        if input[i].1 == 0.0 {
+            println!("ch1 = 0: {}, {}", 
+                input[i].0.clone(), input[i].1.clone());
+        } else if input[i].1 >= -3.00e-2 
+               && input[i].1 <= 3.00e-2 
+        {
+            println!(
+                "maybe ch1 = 0: {}, {}",
+                input[i].0.clone(),
+                input[i].1.clone()
+            );
+        }
+        if input[i].2 == 0.0 {
+            println!("ch2 = 0: {}, {}", 
+                input[i].0.clone(), input[i].2.clone());
+        } else if input[i].2 >= -3.00e-2 
+               && input[i].2 <= 3.00e-2 
+        {
+            println!(
+                "maybe ch2 = 0: {}, {}",
+                input[i].0.clone(),
+                input[i].2.clone()
+            );
+        }
+    }
+}
+\end{lstlisting}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{mokushi1.pdf}
+    \caption{ゲイン(a)の測定値と理論値(目視)}
+    \label{mokushi1}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{mokushi2.pdf}
+    \caption{位相差(a)の測定値と理論値(目視)}
+    \label{mokushi2}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{mokushi3.pdf}
+    \caption{ゲイン(b)の測定値と理論値(目視)}
+    \label{mokushi3}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{mokushi4.pdf}
+    \caption{位相差(b)の測定値と理論値(目視)}
+    \label{mokushi4}
+\end{figure}
 
 % 実験レポート2
 % ここまで
@@ -534,6 +670,10 @@ $C_1=10{\rm \mu F}$、$C_2=1{\rm \mu F}$を用いた。
 % ここから
 
 % \subtitle{2020/11/6}
+
+\newpage
+\ 
+\newpage
 
 \theme{実験3}
 \section{目的}

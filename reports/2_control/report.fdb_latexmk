@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex report"] 1604333584 "report.aux" "report.bbl" "report" 1604333716
+["bibtex report"] 1604336521 "report.aux" "report.bbl" "report" 1604336531
   "assets/ref.bib" 1602422323 150 158892c2a88f7da32df51a6614f3a53b ""
   "junsrt.bst" 0 -1 0 ""
-  "report.aux" 1604333714 4755 0d5ecdbdda7d22ba15da16d35b58d7e4 "latex"
+  "report.aux" 1604336528 5574 737df2254e52e27806dfb7218eac7ebf "latex"
   (generated)
-  "report.bbl"
   "report.blg"
-["dvipdf"] 1604333714 "report.dvi" "report.pdf" "report" 1604333716
-  "report.dvi" 1604333714 23364 f5a779e7fbef650c4a1df64fe6bfa2d6 "latex"
+  "report.bbl"
+["dvipdf"] 1604336529 "report.dvi" "report.pdf" "report" 1604336531
+  "report.dvi" 1604336528 35580 bbf1cd825bcf3bb092a06155c5233b6e "latex"
   (generated)
   "report.pdf"
-["latex"] 1604333709 "report.tex" "report.dvi" "report" 1604333716
+["latex"] 1604336522 "report.tex" "report.dvi" "report" 1604336531
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/lmex10.tfm" 1148093231 992 ce925c9346c7613270a79afbee98c070 ""
@@ -75,6 +75,8 @@
   "/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty" 1585170648 77022 ee25ce086f4a79d8cf73bac6f94c02a5 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/lm/lmodern.sty" 1257296302 1606 c17281c7cff2bbd7ff0173e1433487ec ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmm.fd" 1257296302 888 44447a3a3af84a22454ef89500942d93 ""
+  "/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmr.fd" 1257296302 1014 b44f996e1fb8d1548178b60325f9547d ""
+  "/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omslmr.fd" 1257296302 1013 f8133048bddeed1bf1041c9d830a3723 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omslmsy.fd" 1257296302 805 af340a8260c447aa315cfc740ff0152f ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omxlmex.fd" 1257296302 566 a94661f7b66063f191960bb7935b6ba2 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd" 1257296302 1880 bae7b659316f7344a86218ad38b01d91 ""
@@ -102,19 +104,23 @@
   "fig1.pdf" 1602864443 72867 8f9ab917c9650966d4cb56e0c2c7e8b4 ""
   "fig2.pdf" 1602864450 61305 99e2ff288947a43f73061722d3874b03 ""
   "ideal_bode.pdf" 1604304718 14102 14eebf9927e1f4c40beadaa66c56cba5 ""
-  "ideal_plot.pdf" 1604332427 46946 fb8138ba56f2984e644c3a12b2abc0e5 ""
-  "ideal_plot2.pdf" 1604332476 46938 b90f2ab4d7d293479f506fa6b1f5e3be ""
-  "ideal_plot3.pdf" 1604332772 55292 1b8a2510ec6530552bbd89c28de3138b ""
-  "ideal_plot4.pdf" 1604332796 52505 f88e018bcaee86a527760e60c9427b54 ""
+  "ideal_plot.pdf" 1604335821 46649 b1d3807482f83aabd0f345e9d6e280af ""
+  "ideal_plot2.pdf" 1604335848 46650 f84c27e1173fa0e181370ef67b399e80 ""
+  "ideal_plot3.pdf" 1604335660 49781 7bc6e01e286f28c58143a947a04d64f5 ""
+  "ideal_plot4.pdf" 1604335699 49771 51fdf7adfad8881c7e42febe329374f6 ""
   "ideal_real.pdf" 1604309410 143868 651072a984e95829823396e7ae065ef6 ""
   "ideal_real2.pdf" 1604309384 46654 aac3f17bbe324cdc1a3559a02fbeb21a ""
+  "mokushi1.pdf" 1604332772 55292 1b8a2510ec6530552bbd89c28de3138b ""
+  "mokushi2.pdf" 1604332796 52505 f88e018bcaee86a527760e60c9427b54 ""
+  "mokushi3.pdf" 1604332427 46946 fb8138ba56f2984e644c3a12b2abc0e5 ""
+  "mokushi4.pdf" 1604332476 46938 b90f2ab4d7d293479f506fa6b1f5e3be ""
   "p.pdf" 1602863519 42871 7f0d99cb8b865d722b9946f2db8773c9 ""
   "pv.pdf" 1602863327 43429 bb38c140df077cf94c9726b604f9adce ""
-  "report.aux" 1604333714 4755 0d5ecdbdda7d22ba15da16d35b58d7e4 "latex"
-  "report.bbl" 1604333584 124 56ed5382b4b7a29b613f3cde4e4a602c "bibtex report"
-  "report.tex" 1604333708 16441 0c32a2dc3c92bccef56f4e7ba5b553e3 ""
+  "report.aux" 1604336528 5574 737df2254e52e27806dfb7218eac7ebf "latex"
+  "report.bbl" 1604336522 124 56ed5382b4b7a29b613f3cde4e4a602c "bibtex report"
+  "report.tex" 1604336514 21448 51bf44d8ab7f656b9048600179d30b2d ""
   "souchi2.pdf" 1604332971 59926 a43069e840d1c8c5bc0818feb7209a4d ""
   (generated)
+  "report.dvi"
   "report.log"
   "report.aux"
-  "report.dvi"

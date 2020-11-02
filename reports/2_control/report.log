@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.10.11)  3 NOV 2020 01:15
+This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.10.11)  3 NOV 2020 02:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -506,7 +506,46 @@ File: ideal_plot2.pdf Graphic file (type pdf)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15] [16] (./report.bbl) [17] [18] [19] (./report.aux)
+[15] [16] [17]
+LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 564.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 564.
+ [18]
+LaTeX Font Info:    Trying to load font information for OML+lmr on input line 610.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmr.fd
+File: omllmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OML/lmr/m/n' in size <10> not available
+(Font)              Font shape `OML/lmm/m/it' tried instead on input line 610.
+ [19]
+File: mokushi1.pdf Graphic file (type pdf)
+<mokushi1.pdf>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: mokushi2.pdf Graphic file (type pdf)
+<mokushi2.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: mokushi3.pdf Graphic file (type pdf)
+<mokushi3.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: mokushi4.pdf Graphic file (type pdf)
+<mokushi4.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20] [21]
+Overfull \vbox (64.61421pt too high) has occurred while \output is active []
+
+ [22] (./report.bbl) [23] (./report.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -515,12 +554,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6928 strings out of 480382
- 141618 string characters out of 5894950
- 428866 words of memory out of 5000000
- 23588 multiletter control sequences out of 15000+600000
+ 7251 strings out of 480382
+ 144676 string characters out of 5894950
+ 465906 words of memory out of 5000000
+ 23897 multiletter control sequences out of 15000+600000
  605854 words of font info for 115 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 83i,11n,88p,381b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,11n,88p,381b,1598s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (20 pages, 23364 bytes).
+Output written on report.dvi (24 pages, 35580 bytes).

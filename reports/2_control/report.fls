@@ -463,6 +463,30 @@ INPUT ./ideal_plot2.pdf
 INPUT ./ideal_plot2.pdf
 INPUT ideal_plot2.pdf
 INPUT extractbb -B cropbox -O ideal_plot2.pdf
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/omslmr.fd
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/omslmr.fd
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/omslmr.fd
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/omslmr.fd
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmr.fd
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmr.fd
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmr.fd
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmr.fd
+INPUT ./mokushi1.pdf
+INPUT ./mokushi1.pdf
+INPUT mokushi1.pdf
+INPUT extractbb -B cropbox -O mokushi1.pdf
+INPUT ./mokushi2.pdf
+INPUT ./mokushi2.pdf
+INPUT mokushi2.pdf
+INPUT extractbb -B cropbox -O mokushi2.pdf
+INPUT ./mokushi3.pdf
+INPUT ./mokushi3.pdf
+INPUT mokushi3.pdf
+INPUT extractbb -B cropbox -O mokushi3.pdf
+INPUT ./mokushi4.pdf
+INPUT ./mokushi4.pdf
+INPUT mokushi4.pdf
+INPUT extractbb -B cropbox -O mokushi4.pdf
 INPUT ./report.bbl
 INPUT report.bbl
 INPUT ./report.bbl
