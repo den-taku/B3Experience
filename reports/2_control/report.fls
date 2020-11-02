@@ -435,6 +435,14 @@ INPUT ./ideal_real2.pdf
 INPUT ./ideal_real2.pdf
 INPUT ideal_real2.pdf
 INPUT extractbb -B cropbox -O ideal_real2.pdf
+INPUT ./a.pdf
+INPUT ./a.pdf
+INPUT a.pdf
+INPUT extractbb -B cropbox -O a.pdf
+INPUT ./b.pdf
+INPUT ./b.pdf
+INPUT b.pdf
+INPUT extractbb -B cropbox -O b.pdf
 INPUT ./report.bbl
 INPUT report.bbl
 INPUT ./report.bbl

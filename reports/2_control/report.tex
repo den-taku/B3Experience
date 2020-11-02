@@ -368,10 +368,103 @@ DCサーボモータを定速回転させ、
 制御用アナログ回路を作成しそれを各制御に用いて測定する。
 その結果を測定し、安定性や定常偏差、応答について議論する。
 
+\section{原理}
+今実験では、制御用アナログ回路は図\ref{a}および\ref{b}に示す構成の
+ものを使用する。
+
+まず、図\ref{a}において、
+
+\begin{equation}\label{twenty_seven}
+    v_{\rm out}(t) = K_{\rm C}(v_{\rm ref}(t) - v_{\rm in}(t))
+\end{equation}
+
+の関係が成り立つ。この式を導出する。
+
+オペアンプの+での電圧を$V_+$、-での電圧を$V_-$とすると、
+
+% \begin{equation}
+    % v_{\rm in} = \frac{R_2}{R_2 + R_1}v_{\rm ref}
+% \end{equation}
+
+\begin{equation}
+    \frac{v_{\rm in} - V_-}{R_1} = \frac{V_- - v_{\rm out}}{R_2}
+\end{equation}
+
+\begin{equation}
+    V_+ = \frac{R_2}{R_1+R_2}v_{\rm ref}
+\end{equation}
+
+が成立し、仮想短絡のことを考えると$V_+=V_-$が成立するので、
+
+\begin{equation}\label{twenty_seven}
+    v_{\rm out}(t) = \frac{R_2}{R_1}(v_{\rm ref}(t) - v_{\rm in}(t))
+\end{equation}
+
+が得られる。したがって$K_C = \frac{R_2}{R_1}$が得られる。
+
+次に、図\ref{b}において
+
+\begin{equation}\label{thirty}
+    C(s)=K_C\frac{\alpha (1+sT)}{1+s\alpha T}
+\end{equation}
+
+が成立する。
+
+この式を導出する。
+まず回路の左側は\ref{a}と同じなので、図中の境目では
+
+\begin{equation}
+    V_X = - \frac{R_2}{R_1}(V_{\rm in} - V_{\rm ref})
+\end{equation}
+
+となる。オペアンプの仮想短絡を考えると、
+
+\begin{equation}
+    \frac{V_X}{\frac{R_3}{1+sC_1}} 
+        = \frac{V_{\rm out}}{\frac{R_4}{1+sC_2}}
+\end{equation}
+
+となるので、これを変形して
+
+\begin{equation}
+    C(s) = \frac{R_2R_4}{R_1R_3}\frac{1+sC_1R_3}{1+sC_2R_4} 
+    = \frac{C_2R_2}{C_1R_1} 
+    \frac{\frac{C_2R_4}{C_1R_3}(1+sC_1R_3)}{1+s\frac{C_2R_4}{C_1R_3}C_1R_3}
+\end{equation}
+
+したがって
+
+\begin{equation}
+    K_C =\frac{C_2R_4}{C_1R_3} 
+\end{equation}
+
+\begin{equation}
+    \alpha =\frac{C_2R_4}{C_1R_3} 
+\end{equation}
+
+\begin{equation}
+    T=C_1R_3
+\end{equation}
+
+が算出できる。
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=12cm]{a.pdf}
+    \caption{制御用アナログ回路(a)}
+    \label{a}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=12cm]{b.pdf}
+    \caption{制御用アナログ回路(b)}
+    \label{b}
+\end{figure}
+
 \section{実験}
-\section{実験結果}
+\section{結果}
 \section{考察}
-\section{課題}
 
 % 実験レポート2
 % ここまで
