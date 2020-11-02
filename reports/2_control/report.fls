@@ -420,9 +420,6 @@ INPUT ./bode.pdf
 INPUT ./bode.pdf
 INPUT bode.pdf
 INPUT extractbb -B cropbox -O bode.pdf
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm
 INPUT ./ideal_bode.pdf
 INPUT ./ideal_bode.pdf
 INPUT ideal_bode.pdf
