@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.10.11)  2 NOV 2020 14:31
+This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.10.11)  2 NOV 2020 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -296,7 +296,11 @@ Package: jlisting 2006/02/20 0.2 (Thor)
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 15.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (./report.aux)
+) (./report.aux
+
+LaTeX Warning: Label `ideal_real' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -433,14 +437,49 @@ File: bode.pdf Graphic file (type pdf)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7] [8] [9] [10] [11] (./report.bbl) [12] (./report.aux) ) 
+[7] [8]
+LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 321.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 321.
+LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 321.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 321.
+
+
+LaTeX Warning: Reference `ideal_real2' on page 9 undefined on input line 321.
+
+File: ideal_bode.pdf Graphic file (type pdf)
+<ideal_bode.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ideal_real.pdf Graphic file (type pdf)
+<ideal_real.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ideal_real2.pdf Graphic file (type pdf)
+<ideal_real2.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9] [10] [11] [12] [13] (./report.bbl) [14] (./report.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6862 strings out of 480382
- 140466 string characters out of 5894950
- 426719 words of memory out of 5000000
- 23543 multiletter control sequences out of 15000+600000
- 602621 words of font info for 112 fonts, out of 8000000 for 9000
+ 6884 strings out of 480382
+ 140878 string characters out of 5894950
+ 426776 words of memory out of 5000000
+ 23558 multiletter control sequences out of 15000+600000
+ 605854 words of font info for 115 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  83i,11n,88p,381b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (13 pages, 15532 bytes).
+Output written on report.dvi (15 pages, 17268 bytes).

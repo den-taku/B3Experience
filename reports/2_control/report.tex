@@ -298,23 +298,76 @@ DCサーボモータを定速回転させ、
 最後に、$K$、$T_{\rm E}$、$T_{\rm M}$の同定を行った。
 まず、ボード線図の理論的な概形を考える。
 
+式\ref{twentythree}を参考に理論的なボード線図の概形を描いたものが、
+図\ref{ideal_bode}に示す。
+これは、一次遅れのボード線図を元に考えた。
+これを元に、図\ref{bode}の特にゲインの方を使いそれぞれに値を同定した。
+実際の同定には、グラフを印刷して線を引いて求めた。
+求めた値はそれぞれ
+
+\begin{equation}
+    K=1.03
+\end{equation}
+
+\begin{equation}
+    T_{\rm M} = 0.0909
+\end{equation}
+
+\begin{equation}
+    T_{\rm E} = 0.00132
+\end{equation}
+
+となった。実際この値を用いて求めたグラフを実測値を元にしたグラフに重ねると
+図\ref{ideal_real}、\ref{ideal_real2}のようになる。
+高周波部分は補助線が引きづらかったため、特に$T_{\rm E}$の値の推定が
+難しく、その結果がゲイン図の高周波域での実測値とのズレが出たのだと考えた。
+
+以後は値が必要になった時はこの値を用いることにする。
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=12cm]{ideal_bode.pdf}
+    \caption{理論的なボード線図}
+    \label{ideal_bode}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{ideal_real.pdf}
+    \caption{推測値と実測値}
+    \label{ideal_real}
+\end{figure}
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{ideal_real2.pdf}
+    \caption{推測値と実測値2}
+    \label{ideal_real}
+\end{figure}
 % K,Te,Tm
 % ideal bode
-
-\section{課題}
 
 % 実験レポート1
 % ここまで
 
 \newpage
+\newpage
+\ 
+\newpage
+\ 
+\newpage
 
 % 実験レポート2
 % ここから
 
-\subtitle{2020/11/6}
+% \subtitle{2020/11/6}
 
 \theme{実験2}
 \section{目的}
+制御用アナログ回路を作成しそれを各制御に用いて測定する。
+その結果を測定し、安定性や定常偏差、応答について議論する。
+
 \section{実験}
 \section{実験結果}
 \section{考察}
@@ -329,7 +382,7 @@ DCサーボモータを定速回転させ、
 % 実験レポート3
 % ここから
 
-\subtitle{2020/11/6}
+% \subtitle{2020/11/6}
 
 \theme{実験3}
 \section{目的}

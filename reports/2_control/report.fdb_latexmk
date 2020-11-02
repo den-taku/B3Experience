@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex report"] 1603030141 "report.aux" "report.bbl" "report" 1604295105
+["bibtex report"] 1604309893 "report.aux" "report.bbl" "report" 1604310946
   "assets/ref.bib" 1602422323 150 158892c2a88f7da32df51a6614f3a53b ""
   "junsrt.bst" 0 -1 0 ""
-  "report.aux" 1604295103 3118 e5aece1f6b2fe53541b37cbe46948fb8 "latex"
+  "report.aux" 1604310944 3498 d11f055e2341ca66706660b1d724132c "latex"
   (generated)
-  "report.bbl"
   "report.blg"
-["dvipdf"] 1604295103 "report.dvi" "report.pdf" "report" 1604295105
-  "report.dvi" 1604295103 15532 f7c08971ae7cdcc7ae27a7b25016cc5c "latex"
+  "report.bbl"
+["dvipdf"] 1604310944 "report.dvi" "report.pdf" "report" 1604310946
+  "report.dvi" 1604310944 17268 7eb4ca1ec0c1352e5de1d6093b1aa296 "latex"
   (generated)
   "report.pdf"
-["latex"] 1604295100 "report.tex" "report.dvi" "report" 1604295105
+["latex"] 1604310941 "report.tex" "report.dvi" "report" 1604310946
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/lmex10.tfm" 1148093231 992 ce925c9346c7613270a79afbee98c070 ""
@@ -27,6 +27,7 @@
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/lmsy7.tfm" 1148093231 1304 32f22a15acc296b2a4e15698403dcb88 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm" 1148093231 1304 cdc9a17df9ef0d2dc320eff37bbab1c4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/lmsy9.tfm" 1148093231 1300 ca37bc0213808d24f74bf4d32f81f80d ""
+  "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm" 1254269338 11880 35fcf136a2198418dfc53c83e9e2a07f ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm" 1254269338 11868 4f81e9b6033c032bdaf9884f4d7ef412 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm" 1254269338 11888 6841b91e46b65cf41a49b160e6e74130 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/rm-lmr17.tfm" 1254269338 11948 fa976674f030491ad35532a8a1e37325 ""
@@ -98,12 +99,15 @@
   "dc_eq.pdf" 1602863488 50150 2bda003f87c1e114034c1e427308589f ""
   "fig1.pdf" 1602864443 72867 8f9ab917c9650966d4cb56e0c2c7e8b4 ""
   "fig2.pdf" 1602864450 61305 99e2ff288947a43f73061722d3874b03 ""
+  "ideal_bode.pdf" 1604304718 14102 14eebf9927e1f4c40beadaa66c56cba5 ""
+  "ideal_real.pdf" 1604309410 143868 651072a984e95829823396e7ae065ef6 ""
+  "ideal_real2.pdf" 1604309384 46654 aac3f17bbe324cdc1a3559a02fbeb21a ""
   "p.pdf" 1602863519 42871 7f0d99cb8b865d722b9946f2db8773c9 ""
   "pv.pdf" 1602863327 43429 bb38c140df077cf94c9726b604f9adce ""
-  "report.aux" 1604295103 3118 e5aece1f6b2fe53541b37cbe46948fb8 "latex"
-  "report.bbl" 1603030141 124 56ed5382b4b7a29b613f3cde4e4a602c "bibtex report"
-  "report.tex" 1604295100 10814 7ad131151a4f61b28306c70e8c34f7eb ""
+  "report.aux" 1604310944 3498 d11f055e2341ca66706660b1d724132c "latex"
+  "report.bbl" 1604309893 124 56ed5382b4b7a29b613f3cde4e4a602c "bibtex report"
+  "report.tex" 1604310941 12492 cf09159eca5dce3ad52a9c918d7648d6 ""
   (generated)
-  "report.dvi"
   "report.aux"
   "report.log"
+  "report.dvi"
