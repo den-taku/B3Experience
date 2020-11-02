@@ -560,7 +560,7 @@ $C_1=10{\rm \mu F}$、$C_2=1{\rm \mu F}$を用いた。
 \begin{lstlisting}[caption={csv\_manager.rs}]
     use competitive::prelude::*;
 
-#[argio(output = AtCoder)]
+#[argio()]
 // csvファイルを読み取る
 fn main(input: [(f32, f32, f32); 600]) {
     // 微小時間の幅を求める
