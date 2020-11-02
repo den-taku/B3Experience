@@ -443,6 +443,26 @@ INPUT ./b.pdf
 INPUT ./b.pdf
 INPUT b.pdf
 INPUT extractbb -B cropbox -O b.pdf
+INPUT ./souchi2.pdf
+INPUT ./souchi2.pdf
+INPUT souchi2.pdf
+INPUT extractbb -B cropbox -O souchi2.pdf
+INPUT ./ideal_plot3.pdf
+INPUT ./ideal_plot3.pdf
+INPUT ideal_plot3.pdf
+INPUT extractbb -B cropbox -O ideal_plot3.pdf
+INPUT ./ideal_plot4.pdf
+INPUT ./ideal_plot4.pdf
+INPUT ideal_plot4.pdf
+INPUT extractbb -B cropbox -O ideal_plot4.pdf
+INPUT ./ideal_plot.pdf
+INPUT ./ideal_plot.pdf
+INPUT ideal_plot.pdf
+INPUT extractbb -B cropbox -O ideal_plot.pdf
+INPUT ./ideal_plot2.pdf
+INPUT ./ideal_plot2.pdf
+INPUT ideal_plot2.pdf
+INPUT extractbb -B cropbox -O ideal_plot2.pdf
 INPUT ./report.bbl
 INPUT report.bbl
 INPUT ./report.bbl

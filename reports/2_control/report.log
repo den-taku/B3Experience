@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.10.11)  2 NOV 2020 23:53
+This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.10.11)  3 NOV 2020 01:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -477,7 +477,36 @@ File: b.pdf Graphic file (type pdf)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13] [14] (./report.bbl) [15] (./report.aux)
+[13]
+File: souchi2.pdf Graphic file (type pdf)
+<souchi2.pdf>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14]
+File: ideal_plot3.pdf Graphic file (type pdf)
+<ideal_plot3.pdf>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ideal_plot4.pdf Graphic file (type pdf)
+<ideal_plot4.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ideal_plot.pdf Graphic file (type pdf)
+<ideal_plot.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ideal_plot2.pdf Graphic file (type pdf)
+<ideal_plot2.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15] [16] (./report.bbl) [17] [18] [19] (./report.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -486,12 +515,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6898 strings out of 480382
- 141028 string characters out of 5894950
- 428816 words of memory out of 5000000
- 23568 multiletter control sequences out of 15000+600000
+ 6928 strings out of 480382
+ 141618 string characters out of 5894950
+ 428866 words of memory out of 5000000
+ 23588 multiletter control sequences out of 15000+600000
  605854 words of font info for 115 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  83i,11n,88p,381b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (16 pages, 20888 bytes).
+Output written on report.dvi (20 pages, 23364 bytes).

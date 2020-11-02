@@ -435,7 +435,7 @@ DCサーボモータを定速回転させ、
 したがって
 
 \begin{equation}
-    K_C =\frac{C_2R_4}{C_1R_3} 
+    K_C =\frac{C_2R_2}{C_1R_1} 
 \end{equation}
 
 \begin{equation}
@@ -462,8 +462,66 @@ DCサーボモータを定速回転させ、
     \label{b}
 \end{figure}
 
+\newpage
+
 \section{実験}
+
+上で示した制御回路(a)、(b)を用いて
+周波数特性を測定し、
+そのボード線図を書く。
+制御回路は上の回路図を参考に回路を組み、
+全体の測定装置は図\ref{souchi2}のように組んだ。
+そして周波数を0.2~500Hzまで変化させながら周波数特性を測定した。
+
+なお、回路に用いた素子は(a)の測定装置では$R_1=20{\rm k \Omega}$、
+$R_2=300{\rm k \Omega}$を用いた。また、(b)においては
+$R_1=470{\rm k \Omega}$、$R_2=100{\rm k \Omega}$、
+$R_3=2{\rm k \Omega}$、$R_4=7.5{\rm k \Omega}$、
+$C_1=10{\rm \mu F}$、$C_2=1{\rm \mu F}$を用いた。
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=12cm]{souchi2.pdf}
+    \caption{実験2の測定装置}
+    \label{souchi2}
+\end{figure}
+
+\newpage
+
 \section{結果}
+
+上で求めた理論値を用いて描いた理論グラフと測定によって得られた値を
+プロットしたものをそれぞれ図\ref{ideal_plot3}、\ref{ideal_plot4}、
+\ref{ideal_plot}、\ref{ideal_plot2}に示す。
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=12cm]{ideal_plot3.pdf}
+    \caption{ゲイン(a)の測定値と理論値}
+    \label{ideal_plot3}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=12cm]{ideal_plot4.pdf}
+    \caption{位相差(a)の測定値と理論値}
+    \label{ideal_plot4}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=12cm]{ideal_plot.pdf}
+    \caption{ゲイン(b)の測定値と理論値}
+    \label{ideal_plot}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=12cm]{ideal_plot2.pdf}
+    \caption{位相差(b)の測定値と理論値}
+    \label{ideal_plot2}
+\end{figure}
+
 \section{考察}
 
 % 実験レポート2
