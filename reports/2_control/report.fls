@@ -484,6 +484,10 @@ INPUT ./mokushi4.pdf
 INPUT ./mokushi4.pdf
 INPUT mokushi4.pdf
 INPUT extractbb -B cropbox -O mokushi4.pdf
+INPUT ./gaizu.pdf
+INPUT ./gaizu.pdf
+INPUT gaizu.pdf
+INPUT extractbb -B cropbox -O gaizu.pdf
 INPUT ./report.bbl
 INPUT report.bbl
 INPUT ./report.bbl

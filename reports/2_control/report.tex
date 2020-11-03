@@ -679,10 +679,156 @@ fn main(input: [(f32, f32, f32); 600]) {
 \theme{実験3}
 
 \section{目的}
+実験2で作成したアナログ制御回路を用いて
+DCサーボモータの速度制御、位置制御をそれぞれ行い、
+安定性と定常偏差について調べる。
+また実験結果とOctaveを用いたシミュレーションを比較する。
+
+\section{原理}
+
+今実験で用いた回路のボード線図は、図\ref{gaizu}のようなブロック線図で
+表現できる。
+
+したがって、制御系の安定性を調べるには
+
+\begin{equation}\label{antei}
+    \frac{C(s)P(s)}{1+C(s)P(s)}
+\end{equation}
+
+についてラウスやナイキストの安定判別を行えば良い。
+また、定常偏差の伝達関数は
+
+\begin{equation}\label{hensa}
+    \frac{1}{1+C(s)P(s)}
+\end{equation}
+
+として得られる。
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=12cm]{gaizu.pdf}
+    \caption{ブロック線図(概略図)}
+    \label{gaizu}
+\end{figure}
+
+
 \section{実験}
-\section{実験結果}
+
+アナログ制御回路には、実験2で作成したものを用いた。
+このアナログ制御回路を用いてDCサーボモータの速度制御および
+位置制御を行う。安定性を先に判別し、安定な組み合わせに関してのみ
+ステップ応答を測定した。
+
+また、Octaveを用いて理論的なグラフを描き、
+実験結果を重ねてステップ応答を比較した。
+
+\section{結果}
+
+まず(a)、(b)の制御回路を用いて速度制御、位置制御をした時の安定性を
+ラウスの安定判別法を用いて判別した。
+そして安定な制御系は最終値公式を用いて定常偏差を計算した。
+
+ラウスの安定判別法は、式\ref{antei}の分母A(s)について行う。
+
+まず(a)の制御回路を用いて速度制御した場合の分母は、
+
+\begin{equation}
+    A_1(s) = 1.117\times10^{-4}s^2 + 9.13\times10^{-2} s + 16.5
+\end{equation}
+
+となる。この式は2次式であり、係数が全て正なのでこの制御は安定であると考えた。
+この制御系のステップ応答の定常偏差を最終値公式を用いて求めると
+
+\begin{equation}
+    \lim_{x \to 0} \frac{1}{1 + C(s)P(s)} = 
+        \frac{1}{1.17\times10^{-4}s^2 + 9.13\times10^{-2}s + 16.45}
+            = 0.061
+\end{equation}
+
+次に(a)の制御回路を用いて位置制御した場合の分母は
+
+\begin{equation}
+    A_2(s) = 3.35\times10^{-6}s^3 + 2.61\times10^{-3}s^2 
+        + 2.86\times10^{-2}s + 73.7
+\end{equation}
+
+となる。これに対しラウスの安定判別を行うと
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c||c|c|} \hline
+        行 & 1 & 2 \\ \hline \hline
+        1 & $3.35\times10^{-6}$ & $2.86\times10^{-2}$ \\ \hline
+        2 & $2.61\times10^{-3}$ & 73.65 \\ \hline
+        3 & $-6.59\times10^{-2}$ & \  \\ \hline
+        4 & 73.65 & \  \\ \hline
+    \end{tabular}
+\end{table}
+
+となる。ここで3行1列目で負の数が現れるので、この制御系は
+不安定であると考えた。
+
+次に、(b)の制御回路を用いて速度制御する場合を考えると
+
+\begin{equation}
+    A_3(s) = 8.78\times10^{-7}s^3 + 8.02\times10^{-4}s^2 
+        + 1.15\times10^{-1}s + 1.82
+\end{equation}
+
+となる。これに対しラウスの安定判別法を用いると
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c||c|c|} \hline
+        行 & 1 & 2 \\ \hline \hline
+        1 & $8.78\times10^{-7}$ & $1.15\times10^{-1}$ \\ \hline
+        2 & $8.02\times10^{-4}$ & 1.82 \\ \hline
+        3 & $1.13\times10^{-1}$ & \  \\ \hline
+        4 & 1.82 & \  \\ \hline
+    \end{tabular}
+\end{table}
+
+したがってこの制御系は安定であると考えた。
+この制御系の定常偏差を求めると
+
+\begin{equation}
+    \lim_{x \to 0}\frac{1}{1+C(s)P(s)} 
+        = \frac{1\times1.03}{1.82} = 0.57 
+\end{equation}
+
+最後に(b)の制御回路を用いて位置制御する場合を考えると
+
+\begin{equation}
+    A_4(s) = 2.51\times10^{-8} s^4 + 2.29\times10^{-5}s^3 
+        + 2.82\times10^{-3}s^2 
+        + 1.07\times10^{-1}s + 3.92
+\end{equation}
+
+となる。これに対しラウスの安定判別法を用いると
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c||c|c|c|} \hline
+        行 & 1 & 2 & 3 \\ \hline \hline
+        1 & $2.51\times10^{-8}$ & $2.82\times10^{-3}$ & 3.92 \\ \hline
+        2 & $2.29\times10^{-5}$ & 0.107 & \  \\ \hline
+        3 & $2.70\times10^{-3}$ & 3.92 & \  \\ \hline
+        4 & 1.82 & \ & \  \\ \hline
+        5 & 3.92 & \ & \ \\ \hline
+    \end{tabular}
+\end{table}
+
+となる。したがって、この制御系も安定であると考えた。
+この制御系の定常偏差は
+
+\begin{equation}
+    \lim_{x \to 0} \frac{1}{1 + C(s)P(s)} 
+        = \frac{0}{3.91} = 0
+\end{equation}
+
+と求まる。
+
 \section{考察}
-\section{課題}
 
 % 実験レポート3
 % ここまで
