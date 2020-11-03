@@ -1,7 +1,11 @@
 \begin{thebibliography}{1}
 
-\bibitem{Material}
+\bibitem{key1}
 電気電子工学実習テキスト.
 \newblock 2020.
+
+\bibitem{key2}
+北野正雄.
+\newblock 『電子回路の基礎』.
 
 \end{thebibliography}

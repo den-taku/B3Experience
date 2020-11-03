@@ -524,6 +524,10 @@ INPUT ./unitpvout.pdf
 INPUT ./unitpvout.pdf
 INPUT unitpvout.pdf
 INPUT extractbb -B cropbox -O unitpvout.pdf
+INPUT ./riron_new.pdf
+INPUT ./riron_new.pdf
+INPUT riron_new.pdf
+INPUT extractbb -B cropbox -O riron_new.pdf
 INPUT ./report.bbl
 INPUT report.bbl
 INPUT ./report.bbl

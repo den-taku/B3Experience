@@ -906,6 +906,15 @@ DCサーボモータの速度制御、位置制御をそれぞれ行い、
     \label{unitpbout}
 \end{figure}
 
+\newpage
+\ 
+\newpage
+\ 
+\newpage
+\ 
+\newpage
+\ 
+\newpage
 
 \section{考察}
 
@@ -915,13 +924,75 @@ DCサーボモータの速度制御、位置制御をそれぞれ行い、
 オシロスコープの測定範囲を考慮して目標電圧が0.5Vを設定した。
 したがって、電圧が低い分期待通りの制御ができなかったのだと考えた。
 
+次にステップ応答の理論値と実測値の比較だが、
+制御回路(a)の速度制御以外では、概ね理論値と実測値が一致している。
+しかし、差動増幅器による速度制御では初めに電圧低下が起こったため、
+理論値と実測値が一致していない。
+これは、初めに高い電圧をかけた時に、モーターの慣性によって
+逆向きに誘導された電流によって生じた逆向きの起電力なのではないかと考えた。
+これは(b)においては間に挿入されたコンデンサによって緩和されて
+いるのではないかとも考えた。
+
+これを補填するために、Octave上で逆向きのステップ信号を
+入力して理論値を計算し直したグラフを\ref{riron_new}、
+そのためのコードをソースコード2に示す。
+これにより理論値と実測値が近い結果になった。
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{riron_new.pdf}
+    \caption{入力を補填したステップ応答}
+    \label{riron_new}
+\end{figure}
+
+\newpage
+
+\begin{lstlisting}[caption={vain\_2.m}]
+pkg load control;
+
+clear;
+
+R1=20e3;
+R2=300e3;
+K=1.03;
+TE=1.3267e-3;
+TM=0.0909;
+
+A=csvread("1023__01in.csv");
+
+L=0.010;
+stepsize=0.5;
+
+G=tf([K*R2], [R1*TE*TM R1*(TE+TM) R1+K*R2]);
+G_neo=G*tf([-L/2,1], [L/2,1]);
+
+
+[y_unit1 t]=step(G,0.05);
+y1=y_unit1*stepsize*(-1);
+
+[y_unit2 t]=step(G_neo,0.05);
+y2=y_unit2*stepsize*2;
+
+y=y1+y2;
+
+u=ones(length(t),1)*stepsize;
+
+figure
+plot(t,u,'b--',t,y,'r-', 
+    A(:,1), A(:,2), 'b-', A(:,1), A(:,3), 'g-')
+legend('u','y', 'v_{ref}', 'v_{out}');
+xlabel('Time/s');
+ylabel('Voltage/V');
+\end{lstlisting}
+
 % 実験レポート3
 % ここまで
 
 % 参考文献
 \newpage
 \thispagestyle{empty}
-\nocite{Material}
+\nocite{key1}
+\nocite{key2}
 \bibliographystyle{junsrt}
 \bibliography{assets/ref}
 

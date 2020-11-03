@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.10.11)  3 NOV 2020 23:41
+This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.10.11)  4 NOV 2020 01:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -582,18 +582,25 @@ File: unitpvout.pdf Graphic file (type pdf)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25] (./report.bbl) [26] [27] [28] [29] [30] (./report.aux)
+[25] [26] [27] [28] [29]
+File: riron_new.pdf Graphic file (type pdf)
+<riron_new.pdf>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30] [31] [32] (./report.bbl) [33] (./report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7309 strings out of 480382
- 145626 string characters out of 5894950
- 466035 words of memory out of 5000000
- 23936 multiletter control sequences out of 15000+600000
+ 7316 strings out of 480382
+ 145740 string characters out of 5894950
+ 466048 words of memory out of 5000000
+ 23941 multiletter control sequences out of 15000+600000
  602621 words of font info for 112 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 83i,11n,88p,381b,1598s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,11n,88p,381b,1600s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (31 pages, 47084 bytes).
+Output written on report.dvi (34 pages, 51828 bytes).
