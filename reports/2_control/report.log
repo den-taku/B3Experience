@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.10.11)  3 NOV 2020 20:36
+This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.10.11)  3 NOV 2020 22:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -535,18 +535,35 @@ File: gaizu.pdf Graphic file (type pdf)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24] [25] (./report.bbl) [26] (./report.aux)
+[24]
+File: 07in.pdf Graphic file (type pdf)
+<07in.pdf>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: 08in.pdf Graphic file (type pdf)
+<08in.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: 09in.pdf Graphic file (type pdf)
+<09in.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25] (./report.bbl) [26] [27] (./report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7255 strings out of 480382
- 144726 string characters out of 5894950
- 465945 words of memory out of 5000000
- 23900 multiletter control sequences out of 15000+600000
+ 7273 strings out of 480382
+ 144972 string characters out of 5894950
+ 465975 words of memory out of 5000000
+ 23912 multiletter control sequences out of 15000+600000
  602621 words of font info for 112 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  83i,11n,88p,381b,1598s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (27 pages, 42920 bytes).
+Output written on report.dvi (28 pages, 44936 bytes).

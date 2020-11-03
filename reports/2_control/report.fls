@@ -488,6 +488,18 @@ INPUT ./gaizu.pdf
 INPUT ./gaizu.pdf
 INPUT gaizu.pdf
 INPUT extractbb -B cropbox -O gaizu.pdf
+INPUT ./07in.pdf
+INPUT ./07in.pdf
+INPUT 07in.pdf
+INPUT extractbb -B cropbox -O 07in.pdf
+INPUT ./08in.pdf
+INPUT ./08in.pdf
+INPUT 08in.pdf
+INPUT extractbb -B cropbox -O 08in.pdf
+INPUT ./09in.pdf
+INPUT ./09in.pdf
+INPUT 09in.pdf
+INPUT extractbb -B cropbox -O 09in.pdf
 INPUT ./report.bbl
 INPUT report.bbl
 INPUT ./report.bbl

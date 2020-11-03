@@ -740,8 +740,8 @@ DCサーボモータの速度制御、位置制御をそれぞれ行い、
 この制御系のステップ応答の定常偏差を最終値公式を用いて求めると
 
 \begin{equation}
-    \lim_{x \to 0} \frac{1}{1 + C(s)P(s)} = 
-        \frac{1}{1.17\times10^{-4}s^2 + 9.13\times10^{-2}s + 16.45}
+    \lim_{s \to 0} \frac{1}{1 + C(s)P(s)} = 
+        \lim_{s \to 0} \frac{1}{1.17\times10^{-4}s^2 + 9.13\times10^{-2}s + 16.45}
             = 0.061
 \end{equation}
 
@@ -792,7 +792,7 @@ DCサーボモータの速度制御、位置制御をそれぞれ行い、
 この制御系の定常偏差を求めると
 
 \begin{equation}
-    \lim_{x \to 0}\frac{1}{1+C(s)P(s)} 
+    \lim_{s \to 0}\frac{1}{1+C(s)P(s)} 
         = \frac{1\times1.03}{1.82} = 0.57 
 \end{equation}
 
@@ -822,13 +822,48 @@ DCサーボモータの速度制御、位置制御をそれぞれ行い、
 この制御系の定常偏差は
 
 \begin{equation}
-    \lim_{x \to 0} \frac{1}{1 + C(s)P(s)} 
+    \lim_{s \to 0} \frac{1}{1 + C(s)P(s)} 
         = \frac{0}{3.91} = 0
 \end{equation}
 
 と求まる。
 
+以上の結果は、実験時に実際に制御させ安定かどうかを
+現象として判定した結果と合致する。
+
+以上の結果を元に、制御回路(a)での速度制御および制御回路(b)での位置制御を
+行い、実測値と計算結果を比較したグラフを図\ref{07in}、\ref{08in}、
+\ref{09in}に示す。制御回路(b)による制御は理論値に近い結果が得られたが、
+制御回路(a)よる制御は期待通りの結果にならなかった。
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{07in.pdf}
+    \caption{制御回路(a)の速度制御}
+    \label{07in}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{08in.pdf}
+    \caption{制御回路(b)の速度制御}
+    \label{08in}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{09in.pdf}
+    \caption{制御回路(b)の位置制御}
+    \label{09in}
+\end{figure}
+
 \section{考察}
+
+まず定常偏差の計算結果と実測値が制御回路(a)において一致が見られなかったのは、
+目標値の設定電圧が低かったことが原因として考えられる。
+比例ゲイン(a)では今回用いた素子により15倍のゲインが得られるものであったが、
+オシロスコープの測定範囲を考慮して目標電圧が0.5Vを設定した。
+したがって、電圧が低い分期待通りの制御ができなかったのだと考えた。
 
 % 実験レポート3
 % ここまで
