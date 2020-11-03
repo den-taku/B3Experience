@@ -836,6 +836,13 @@ DCサーボモータの速度制御、位置制御をそれぞれ行い、
 \ref{09in}に示す。制御回路(b)による制御は理論値に近い結果が得られたが、
 制御回路(a)よる制御は期待通りの結果にならなかった。
 
+またステップ応答の結果と理論値をOctaveを用いて
+重ねたものをそれぞれ図\ref{unitvain}、\ref{unitvaout}、
+\ref{unitvbin}、\ref{unitvbout}、\ref{unitpbin}、\ref{unitpbout}
+に示す。なお、制御回路(a)による速度制御の$v_{\rm out}$はオシロスコープから
+データを取り出す段階でデータが壊れてしまい、描画できなかった。
+そのため計算結果に基づくシミュレーションのみを描画した。
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=9cm]{07in.pdf}
@@ -856,6 +863,49 @@ DCサーボモータの速度制御、位置制御をそれぞれ行い、
     \caption{制御回路(b)の位置制御}
     \label{09in}
 \end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{unitvain.pdf}
+    \caption{(a)の速度制御のステップ応答$v_{\rm in}$}
+    \label{unitvain}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{unitvaout.pdf}
+    \caption{(a)の速度制御のステップ応答$v_{\rm out}$}
+    \label{unitvaout}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{unitvbin.pdf}
+    \caption{(b)の速度制御のステップ応答$v_{\rm in}$}
+    \label{unitvbin}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{unitvbout.pdf}
+    \caption{(b)の速度制御のステップ応答$v_{\rm out}$}
+    \label{unitvbout}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{unitpbin.pdf}
+    \caption{(b)の位置制御のステップ応答$v_{\rm in}$}
+    \label{unitpbin}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{unitpvout.pdf}
+    \caption{(b)の位置制御のステップ応答$v_{\rm out}$}
+    \label{unitpbout}
+\end{figure}
+
 
 \section{考察}
 

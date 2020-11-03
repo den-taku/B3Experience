@@ -12,15 +12,17 @@ K=1.03;
 TE=1.3267e-3;
 TM=0.0909;
 
+A=csvread("102310in.csv");
+
 G=tf([C1*R3*K*R2*R4 K*R2*R4], [TE*TM*C2*R1*R3*R4 R1*R3*(TE*TM+(TE+TM)*C2*R4) R1*R3*(TE+TM+C2*R4)+K*C1*R2*R3*R4 (R1*R3+K*R2*R4)]);
 stepsize=5;
 
-[y_unit t]=step(G,1);
+[y_unit t]=step(G,0.1);
 y=y_unit*stepsize;
 u=ones(length(t),1)*stepsize;
 
 figure
-plot(t,u,'b--',t,y,'r-')
-legend('u','y');
+plot(t,u,'b--',t,y,'r-', A(:,1), A(:,2), 'b-', A(:,1), A(:,3), 'g-')
+legend('u','y', 'input', 'output');
 xlabel('Time/s');
 ylabel('Voltage/V');

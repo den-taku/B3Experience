@@ -11,7 +11,7 @@ TM=0.0909;
 G=tf([R2*TE*TM R1*(TE+TM) R1], [R1*TE*TM R1*(TE+TM) R1+K*R2]);
 stepsize=0.5;
 
-[y_unit t]=step(G,1);
+[y_unit t]=step(G,0.1);
 y=y_unit*stepsize;
 u=ones(length(t),1)*stepsize;
 

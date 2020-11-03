@@ -500,6 +500,30 @@ INPUT ./09in.pdf
 INPUT ./09in.pdf
 INPUT 09in.pdf
 INPUT extractbb -B cropbox -O 09in.pdf
+INPUT ./unitvain.pdf
+INPUT ./unitvain.pdf
+INPUT unitvain.pdf
+INPUT extractbb -B cropbox -O unitvain.pdf
+INPUT ./unitvaout.pdf
+INPUT ./unitvaout.pdf
+INPUT unitvaout.pdf
+INPUT extractbb -B cropbox -O unitvaout.pdf
+INPUT ./unitvbin.pdf
+INPUT ./unitvbin.pdf
+INPUT unitvbin.pdf
+INPUT extractbb -B cropbox -O unitvbin.pdf
+INPUT ./unitvbout.pdf
+INPUT ./unitvbout.pdf
+INPUT unitvbout.pdf
+INPUT extractbb -B cropbox -O unitvbout.pdf
+INPUT ./unitpbin.pdf
+INPUT ./unitpbin.pdf
+INPUT unitpbin.pdf
+INPUT extractbb -B cropbox -O unitpbin.pdf
+INPUT ./unitpvout.pdf
+INPUT ./unitpvout.pdf
+INPUT unitpvout.pdf
+INPUT extractbb -B cropbox -O unitpvout.pdf
 INPUT ./report.bbl
 INPUT report.bbl
 INPUT ./report.bbl
